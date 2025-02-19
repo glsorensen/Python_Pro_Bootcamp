@@ -1,4 +1,7 @@
 import random
+from art import logo
+
+print(logo)
 
 def difficulty():
     print("Hello, Welcome to the guessing game!")
@@ -7,14 +10,14 @@ def difficulty():
     while True:
         response = input("Would you like to play on easy (10 guesses) or hard (5 guesses)\n").strip().lower()
 
-            if response == "easy":
-                print("You have picked easy and will have 10 guesses.")
-                return response
-            elif response == "hard":
-                print("You have picked hard and will have 5 guesses.")
-                return response
-            else:
-                print("Incorrect entry, please enter 'easy' or 'hard'.")
+        if response == "easy":
+            print("You have picked easy and will have 10 guesses.")
+            return response
+        elif response == "hard":
+            print("You have picked hard and will have 5 guesses.")
+            return response
+        else:
+            print("Incorrect entry, please enter 'easy' or 'hard'.")
 
 def guessing_game():
     user_attempts = difficulty()
